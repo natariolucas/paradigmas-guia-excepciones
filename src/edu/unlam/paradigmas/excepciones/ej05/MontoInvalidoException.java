@@ -1,4 +1,4 @@
-package edu.unlam.paradigmas.excepciones.ej04;
+package edu.unlam.paradigmas.excepciones.ej05;
 
 public class MontoInvalidoException extends Exception {
 

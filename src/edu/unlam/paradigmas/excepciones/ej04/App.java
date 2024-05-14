@@ -7,7 +7,7 @@ public class App {
 		try {
 			cuenta.Depositar(200);
 			cuenta.Extraer(300);
-		} catch (MontoInvalidoException | SaldoInsuficienteException e) {
+		} catch (SaldoInsuficienteException e) {
 			e.printStackTrace();
 		}
 	}

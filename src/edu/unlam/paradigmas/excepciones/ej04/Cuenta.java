@@ -5,19 +5,11 @@ public class Cuenta {
 	private double saldo = 0;
 	public Cuenta() {}
 	
-	public void Depositar(double monto) throws MontoInvalidoException {
-		if (monto <= 0) {
-			throw new MontoInvalidoException();
-		}
-		
+	public void Depositar(double monto) {
 		this.saldo += monto;
 	}
 	
-	public void Extraer(double monto) throws MontoInvalidoException, SaldoInsuficienteException {
-		if (monto <= 0) {
-			throw new MontoInvalidoException();
-		}
-		
+	public void Extraer(double monto) throws SaldoInsuficienteException {
 		if (!this.saldoSuficiente(monto)) {
 			throw new SaldoInsuficienteException();
 		}
